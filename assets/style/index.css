@@ -1,35 +1,37 @@
-body, html {
-    height: 100%;
-    margin: 0;
+body {
     font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+    width: 99vw;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
 }
-
-.landing-bg {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.landing-bg {
+body::before {
+    content: '';
+    position: fixed;
+    width: 99vw;
+    height: 100vh;
     background-image: url("img/bg.jpg");
-    height: 100%;
+    background-size: cover;
+    z-index: -1;
 }
-
-.caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
+.content {
+    padding: 16px;
+    color: #f2f2f2;
+    border: solid 1px black;
+    background: rgba(0, 0, 0, 0.5);
+}
+.btn {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
 }
-
-.caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
+footer {
+    text-align: center;
+    color: #f2f2f2;
 }
