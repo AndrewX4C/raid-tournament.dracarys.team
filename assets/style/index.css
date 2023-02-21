@@ -8,7 +8,7 @@ body {
 body::before {
     content: '';
     position: fixed;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     background-image: url("img/bg.jpg");
     background-size: cover;
@@ -20,18 +20,14 @@ body::before {
     border: solid 1px black;
     background: rgba(0, 0, 0, 0.5);
 }
-.btn {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 16px;
-}
 footer {
     text-align: center;
     color: #f2f2f2;
+}
+.alert {
+    background-color: rgba(255, 0, 0, 0.3);
+    border: solid 1px red;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 16px;
 }
